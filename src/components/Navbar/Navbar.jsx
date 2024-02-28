@@ -4,12 +4,12 @@ const Navbar = () => {
 
 
   return (
-    <section className="h-wrapper">
-      <div className="flexCenter paddings innerWidth h-container">
+    <section className="nav-wrapper">
+      <div className="flexCenter paddings innerWidth nav-container">
 
         <img src="src/assets/logo.png" alt="logo" width={100}/>
 
-        <div className="flexCenter h-menu">
+        <div className="flexCenter nav-menu">
           <a href="#residencies">Residencies</a>
           <a href="#value">Our Value</a>
           <a href="#contact-us">Contact Us</a>
