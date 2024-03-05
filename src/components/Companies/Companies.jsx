@@ -2,8 +2,8 @@ import "./Companies.css";
 
 const Companies = () => {
     return (
-        <section className="c-wrapper">
-            <div className="paddings innerWidth flexCenter c-container">
+        <section className="com-wrapper">
+            <div className="paddings innerWidth flexCenter com-container">
                 <img src="src/assets/prologis.png" alt="Company 1" />
                 <img src="src/assets/tower.png" alt="Company 2" />
                 <img src="src/assets/equinix.png" alt="Company 3" />

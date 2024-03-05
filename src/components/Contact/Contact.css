@@ -1,13 +1,13 @@
-.c-container {
-  justify-content: space-between;
-}
-
 .c-container>div {
   flex: 1;
 }
 
-.c-right {
+.c-container .c-right {
   width: 100%;
+}
+
+.image-container {
+  border: 8px solid rgb(232 232 232 / 93%);
 }
 
 .c-left {
@@ -59,4 +59,50 @@
   background: var(--blue-gradient);
   color: white;
   scale: 0.8;
+}
+
+@media (max-width: 1096px) {
+  .c-wrapper .c-container {
+    flex-direction: column;
+  }
+
+  .c-container .c-right {
+    justify-content: center;
+  }
+
+  .contactModes {
+    width: 100%;
+  }
+
+  .row {
+    width: 100%;
+  }
+
+  .mode {
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .c-container .c-left {
+    align-items: center;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 768px) {
+  .c-wrapper {
+    margin-top: -5rem;
+    margin-bottom: -4rem;
+  }
+}
+
+@media (max-width: 486px) {
+  .image-container{
+    width: 100%;
+  }
+
+  .row {
+    flex-direction: column;
+    width: 100%;
+  }
 }

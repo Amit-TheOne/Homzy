@@ -32,7 +32,7 @@
 
 .r-card>:nth-child(4) {
   font-size: 0.7rem;
-  width: 15rem;
+  width: 100%;
 }
 
 .r-card:hover {
@@ -71,4 +71,28 @@
 
 .r-buttons>:hover {
   background-color: var(--lightBlue)
+}
+
+@media (max-width: 640px) {
+  .r-container .r-head {
+    align-items: center;
+    text-align: center;
+  }
+
+  .button-wrapper .r-buttons {
+    position: initial;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .r-card>img {
+    max-width: 20rem;
+  }
+}
+
+@media (max-width: 596px) {
+  .r-card>:nth-child(4) {
+    width: 80%;
+  }
+  
 }
