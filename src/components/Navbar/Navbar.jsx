@@ -2,9 +2,11 @@ import { useState } from "react";
 import "./Navbar.css";
 import { BiMenuAltRight } from "react-icons/bi";
 import OutsideClickHandler from "react-outside-click-handler";
+import useNavbarColor from "../../hooks/useNavbarColor";
 
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false);
+    const navbarColor = useNavbarColor();
 
     const getMenuStyles = (showMenu) => {
         if (document.documentElement.clientWidth <= 800) {
@@ -13,7 +15,7 @@ const Navbar = () => {
     };
 
     return (
-        <section className="nav-wrapper">
+        <section className="nav-wrapper" style={{ background: navbarColor }}>
             <div className="flexCenter paddings innerWidth nav-container">
                 <img src="src/assets/logo.png" alt="logo" width={100} />
 

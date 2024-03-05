@@ -1,5 +1,8 @@
 .nav-wrapper {
-  color: white;
+  background: var(--black);
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
  .nav-wrapper .nav-container {

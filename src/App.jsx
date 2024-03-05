@@ -11,9 +11,9 @@ import Footer from "./components/Footer/Footer";
 function App() {
     return (
         <div className="App">
+            <Navbar />
             <div>
-              <div className="white-gradient"/>
-                <Navbar />
+                <div className="white-gradient" />
                 <Hero />
             </div>
             <Companies />
