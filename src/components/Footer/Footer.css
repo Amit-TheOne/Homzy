@@ -6,10 +6,18 @@
   gap: 1rem;
 }
 
+.f-left>img:hover {
+  cursor: pointer;
+}
+
 .f-right .f-menu{
   gap: 1.5rem;
   margin-top: 1.5rem;
   font-weight: 500;
+}
+
+.f-menu>*:hover {
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {

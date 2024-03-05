@@ -16,7 +16,7 @@ const Value = () => {
     const [accordion, setAccordion] = useState(null);
 
     return (
-        <section className="v-wrapper">
+        <section id="value" className="v-wrapper">
             <div className="paddings innerWidth flexCenter v-container">
                 {/* left side */}
                 <div className="v-left">
