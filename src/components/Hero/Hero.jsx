@@ -1,6 +1,7 @@
 import "./Hero.css";
 import { HiLocationMarker } from "react-icons/hi";
 import CountUp from "react-countup";
+import { motion } from "framer-motion";
 
 const Hero = () => {
     return (
@@ -10,11 +11,18 @@ const Hero = () => {
                 <div className="flexColStart hero-left">
                     <div className="hero-title">
                         <div className="orange-circle" />
-                        <h1>
+                        <motion.h1
+                            initial={{ y: "2rem", opacity: 0 }}
+                            animate={{ y: 0, opacity: 1 }}
+                            transition={{
+                                duration: 4,
+                                type: "spring",
+                            }}
+                        >
                             Discover <br />
                             Your Dream Home <br />
                             With Us
-                        </h1>
+                        </motion.h1>
                     </div>
                     <div className="flexColStart hero-description">
                         <span className="poppins-medium">
@@ -36,7 +44,9 @@ const Hero = () => {
                                 <CountUp start={2400} end={2600} duration={4} />
                                 <span>+</span>
                             </span>
-                            <span className="secondaryText">Property Listings</span>
+                            <span className="secondaryText">
+                                Property Listings
+                            </span>
                         </div>
 
                         <div className="flexColCenter stat">
@@ -44,7 +54,9 @@ const Hero = () => {
                                 <CountUp start={450} end={520} duration={4} />
                                 <span>+</span>
                             </span>
-                            <span className="secondaryText">Satisfied Clients</span>
+                            <span className="secondaryText">
+                                Satisfied Clients
+                            </span>
                         </div>
 
                         <div className="flexColCenter stat">
@@ -59,9 +71,17 @@ const Hero = () => {
 
                 {/* right side */}
                 <div className="flexCenter hero-right">
-                    <div className="image-container">
+                    <motion.div
+                        initial={{ x: "7rem", opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{
+                            duration: 5,
+                            type: "spring",
+                        }}
+                        className="image-container"
+                    >
                         <img src="src/assets/hero-image.png" alt="Hero Image" />
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </section>
