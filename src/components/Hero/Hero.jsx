@@ -80,7 +80,7 @@ const Hero = () => {
                         }}
                         className="image-container"
                     >
-                        <img src="src/assets/hero-image.png" alt="Hero Image" />
+                        <img src="/assets/hero-image.png" alt="Hero Image" />
                     </motion.div>
                 </div>
             </div>

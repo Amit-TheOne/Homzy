@@ -17,7 +17,7 @@ const Navbar = () => {
     return (
         <section className="nav-wrapper" style={{ background: navbarColor }}>
             <div className="flexCenter paddings innerWidth nav-container">
-                <img src="src/assets/logo.png" alt="logo" width={100} />
+                <img src="/assets/logo.png" alt="logo" width={100} />
 
                 <OutsideClickHandler onOutsideClick={() => setShowMenu(false)}>
                     <div

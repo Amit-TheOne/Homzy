@@ -105,7 +105,7 @@ const Contact = () => {
                 {/* right side */}
                 <div className="flexEnd c-right">
                     <div className="image-container">
-                        <img src="/src/assets/contact.jpg" alt="Property" />
+                        <img src="/assets/contact.jpg" alt="Property" />
                     </div>
                 </div>
             </div>
